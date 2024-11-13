@@ -141,7 +141,7 @@ export default function Page() {
             type="submit"
             className="w-full py-3 mt-4 text-lg font-semibold text-white bg-green-600 rounded hover:bg-green-700 transition"
           >
-            Sign In
+            Sign Up
           </button>
         </form>
 

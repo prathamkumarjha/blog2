@@ -57,7 +57,12 @@ const Nav: React.FC<NavProps> = ({ userData, setUserData }) => {
 
   return (
     <div className="shadow-md bg-white flex items-center justify-between p-2 px-4 space-x-4">
-      <div className="flex items-center space-x-4 text-4xl font-extrabold text-red-700">
+      <div
+        className="flex items-center space-x-4 text-4xl font-extrabold text-red-700"
+        onClick={() => {
+          router.push("/");
+        }}
+      >
         Kandhari
       </div>
       <div className="w-full">
