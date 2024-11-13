@@ -27,7 +27,9 @@ const Layout: React.FC<NavLayoutProps> = ({ children }) => {
       try {
         const response = await axiosInstance.get("/api/web/auth/profile/");
         setUserData(response.data);
-      } catch (err: any) {
+      } catch (
+        err // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ) {
         setUserData(null);
         // setError("Failed to fetch user data.");
         console.error("Error fetching user data:", err);
